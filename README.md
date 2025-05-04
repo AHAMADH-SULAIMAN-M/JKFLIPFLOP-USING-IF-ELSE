@@ -34,15 +34,44 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Open Quartus II and create a new project wizard.
+
+2.Create a Verilog HDL file and enter the JK Flip-Flop code.
+
+3.Save the file.
+
+4.Click Compile to check for errors and build the design.
+
+5.Go to Tools > Netlist Viewers > RTL Viewer to view and save the RTL schematic.
+
+6.Create a Vector Waveform File (.vwf) via File > New > University Program VWF.
+
+7.Add input/output nodes using Node finder.
+
+8.Apply different input combinations (J, K, Clock) in the waveform.
+
+9.Run Simulation from Processing > Start Simulation.
+
+10.View and save the timing diagram showing the JK flip-flop behavior.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+![Screenshot 2025-05-04 130329](https://github.com/user-attachments/assets/85e2667a-babf-4917-89a3-5e06c6392afc)
+
+Developed by:AHAMADH SULAIMAN M RegisterNumber:212224230009
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+
+![Screenshot 2025-05-04 130340](https://github.com/user-attachments/assets/ab5c6568-8736-4a73-acf9-eb8d3281a867)
+
+
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+
+![Screenshot 2025-05-04 130715](https://github.com/user-attachments/assets/427bf737-fcbc-4019-814d-398e81fa860b)
+
+
 **RESULTS**
+
+            JK flipflop using verilog and validating their functionality using their functional tables are verified.

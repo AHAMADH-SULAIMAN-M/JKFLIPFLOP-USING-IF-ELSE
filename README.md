@@ -73,5 +73,4 @@ Developed by:AHAMADH SULAIMAN M RegisterNumber:212224230009
 
 
 **RESULTS**
-
-            JK flipflop using verilog and validating their functionality using their functional tables are verified.
+    JK flipflop using verilog and validating their functionality using their functional tables are verified.

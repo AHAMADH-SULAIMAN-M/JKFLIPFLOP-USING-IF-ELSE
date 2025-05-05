@@ -56,26 +56,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 
-**module de_ex7 (j,k,q,qb,clk,reset);
-input j,k,clk,reset;
-output reg q;
-output qb;
+![Screenshot 2025-05-05 141744](https://github.com/user-attachments/assets/3625e83d-e6d9-4824-b0df-258cce26be0e)
 
-always @ (posedge clk) begin
-	if(!reset)
-					q<=0;
-	else
-begin
-	case({j,k})
-			2'b00: q<=q;
-					2'b01: q <= 1'b0;
-	2'b10: q <= 1'b1;
-				2'b11:          q<=qb;
-	endcase
- end
-end
- assign qb = ~q;
-endmodule**
 
 Developed by:AHAMADH SULAIMAN M RegisterNumber:212224230009
 

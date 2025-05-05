@@ -56,7 +56,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 
-module de_ex7 (j,k,q,qb,clk,reset);
+**module de_ex7 (j,k,q,qb,clk,reset);
 input j,k,clk,reset;
 output reg q;
 output qb;
@@ -75,7 +75,7 @@ begin
  end
 end
  assign qb = ~q;
-endmodule
+endmodule**
 
 Developed by:AHAMADH SULAIMAN M RegisterNumber:212224230009
 

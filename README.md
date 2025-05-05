@@ -56,20 +56,41 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 
-![Screenshot 2025-05-04 130329](https://github.com/user-attachments/assets/85e2667a-babf-4917-89a3-5e06c6392afc)
+module de_ex7 (j,k,q,qb,clk,reset);
+input j,k,clk,reset;
+output reg q;
+output qb;
+
+always @ (posedge clk) begin
+	if(!reset)
+					q<=0;
+	else
+begin
+	case({j,k})
+			2'b00: q<=q;
+					2'b01: q <= 1'b0;
+	2'b10: q <= 1'b1;
+				2'b11:          q<=qb;
+	endcase
+ end
+end
+ assign qb = ~q;
+endmodule
 
 Developed by:AHAMADH SULAIMAN M RegisterNumber:212224230009
 
 **RTL LOGIC FOR FLIPFLOPS**
 
 
-![Screenshot 2025-05-04 130340](https://github.com/user-attachments/assets/ab5c6568-8736-4a73-acf9-eb8d3281a867)
+![Screenshot 2025-05-05 141222](https://github.com/user-attachments/assets/57ddadad-96b6-4b8c-90ca-8c3f04ed3ac3)
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
 
-![Screenshot 2025-05-04 130715](https://github.com/user-attachments/assets/427bf737-fcbc-4019-814d-398e81fa860b)
+![Screenshot 2025-05-05 141236](https://github.com/user-attachments/assets/170ca1b9-c12e-4360-812e-9afa1a53b86b)
+
 
 
 **RESULTS**
